@@ -1,6 +1,3 @@
-Here is the full README file for your project:
-
-```markdown
 # NULLCLASS_INTERN_PROJECT_2JECT1
 # Drowsiness and Age Detection
 
