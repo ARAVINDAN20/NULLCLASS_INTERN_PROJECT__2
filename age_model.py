@@ -7,7 +7,7 @@ from tensorflow.keras.utils import Sequence
 from sklearn.model_selection import train_test_split
 
 # Define image directory path
-image_dir = "E:\\Emotion Detection\\UTKFace"
+image_dir = "UTKFace"
 
 # Initialize lists to hold image paths and ages
 image_paths = []
