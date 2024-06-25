@@ -34,10 +34,16 @@ pip install opencv-python dlib numpy tensorflow Pillow
 
 ### Model Files
 
-1. **Face Landmarks Predictor**: Download the `shape_predictor_68_face_landmarks.dat` from [this Google Drive link](https://drive.google.com/drive/folders/11Ktgi9ssFmGlRUtwL79IUVAoQdQC5VuO) and place the file in the project directory.
+1. **Face Landmarks Predictor**: Download the `shape_predictor_68_face_landmarks.dat` from [this Google Drive link](https://drive.google.com/file/d/1N3lJNmN44SbyEC6w_siu39t3JTBRXmXH/view?usp=sharing) and place the file in the project directory.
 
 2. **Age Prediction Model**: Ensure you have the `age_model.h5` file in the project directory.(or run this age_model.py)
-        DataSet:https://www.kaggle.com/datasets/jangedoo/utkface-new 
+        DataSet:https://www.kaggle.com/datasets/jangedoo/utkface-new
+
+   
+## Download the pre-trained models from the provided links and place them in the appropriate directories:
+[age_model.h5 link](https://drive.google.com/file/d/1O0Xztmb0J5pmEiUsbtbc89DKelIOfL6N/view?usp=sharing)
+[shape_predictor_68_face_landmarks.dat link](https://drive.google.com/file/d/1N3lJNmN44SbyEC6w_siu39t3JTBRXmXH/view?usp=sharing)
+
 
 ### Directory Structure
 
