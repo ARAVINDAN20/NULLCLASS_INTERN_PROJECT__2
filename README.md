@@ -41,8 +41,10 @@ pip install opencv-python dlib numpy tensorflow Pillow
 
    
 ## Download the pre-trained models from the provided links and place them in the appropriate directories:
-[age_model.h5 link](https://drive.google.com/file/d/1O0Xztmb0J5pmEiUsbtbc89DKelIOfL6N/view?usp=sharing)
-[shape_predictor_68_face_landmarks.dat link](https://drive.google.com/file/d/1N3lJNmN44SbyEC6w_siu39t3JTBRXmXH/view?usp=sharing)
+[age_model.h5 ](https://drive.google.com/file/d/1O0Xztmb0J5pmEiUsbtbc89DKelIOfL6N/view?usp=sharing)
+
+
+[shape_predictor_68_face_landmarks.dat](https://drive.google.com/file/d/1N3lJNmN44SbyEC6w_siu39t3JTBRXmXH/view?usp=sharing)
 
 
 ### Directory Structure
