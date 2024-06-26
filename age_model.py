@@ -9,11 +9,9 @@ from sklearn.model_selection import train_test_split
 # Define image directory path
 image_dir = "UTKFace"
 
-# Initialize lists to hold image paths and ages
 image_paths = []
 ages = []
 
-# Parse filenames to extract ages
 for filename in os.listdir(image_dir):
     if filename.endswith(".jpg"):
         try:
@@ -23,17 +21,13 @@ for filename in os.listdir(image_dir):
         except ValueError:
             print(f"Skipping file due to unexpected format: {filename}")
 
-# Check if any images were loaded
 if not image_paths:
     raise ValueError("No valid image paths found. Please check the directory contents.")
 
-# Print the number of images and ages found
 print(f"Found {len(image_paths)} images and {len(ages)} ages.")
 
-# Split the data into training and validation sets
 train_paths, val_paths, train_ages, val_ages = train_test_split(image_paths, ages, test_size=0.2, random_state=42)
 
-# Custom data generator
 class AgeDataGenerator(Sequence):
     def __init__(self, image_paths, ages, batch_size=32, target_size=(200, 200)):
         self.image_paths = image_paths
@@ -55,7 +49,6 @@ class AgeDataGenerator(Sequence):
     def on_epoch_end(self):
         np.random.shuffle(self.indices)
 
-# Create data generators
 train_gen = AgeDataGenerator(train_paths, train_ages)
 val_gen = AgeDataGenerator(val_paths, val_ages)
 
@@ -75,8 +68,6 @@ model = Sequential([
 
 model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mae'])
 
-# Train the model
 model.fit(train_gen, validation_data=val_gen, epochs=10)
 
-# Save the model
 model.save("age_model.h5")
