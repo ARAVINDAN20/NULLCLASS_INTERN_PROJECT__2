@@ -19,7 +19,7 @@ for filename in os.listdir(image_dir):
             image_paths.append(os.path.join(image_dir, filename))
             ages.append(age)
         except ValueError:
-            print(f"Skipping file due to unexpected format: {filename}")
+            print(f"unexpected format: {filename}")
 
 if not image_paths:
     raise ValueError("No valid image paths found. Please check the directory contents.")
