@@ -1,4 +1,6 @@
 # NULLCLASS_INTERN_PROJECT_2JECT1
+<img src="https://github.com/user-attachments/assets/5d573837-6773-4120-808a-58f95fc569e6" alt="Rachel HR Interview Bot" width="300" height="360">
+
 # Drowsiness and Age Detection
 
 This project is a Python application that detects drowsiness and estimates the age of individuals from live camera feed, video files, or images. It uses computer vision techniques and deep learning models to achieve these tasks.
